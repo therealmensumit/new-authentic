@@ -101,27 +101,33 @@ img{
     background-size: cover;
     background-position: 100% 100%;
     .row{
-        padding-top: 10rem;
+        padding-top: 6rem;
         align-items: center;
-    }
-    .banner-text {
-        h1 {
-            color: var(--white);
-            font-weight: 700;
-            font-size: 58px;    
-            line-height: 63px;
-            span{
-                color: var(--orange);
+        .banner-text {
+            h1 {
+                color: var(--white);
+                font-weight: 700;
+                font-size: 58px;    
+                line-height: 63px;
+                span{
+                    color: var(--orange);
+                    word-break: break-word;
+                }
+            }
+            p{
+                color: var(--white);
+                margin: 1rem 0;
+            }
+            .butn{
+                padding: 7px 15px;
+                border: 2px solid;
+                display: inline-block;
             }
         }
-        p{
-            color: var(--white);
-            margin: 1rem 0;
-        }
-        .butn{
-            padding: 7px 15px;
-            border: 2px solid;
-            display: inline-block;
+        figure.text-center{
+            img{
+                width: 430px;
+            }
         }
     }
 }
@@ -424,6 +430,9 @@ img{
         .icons{
             width: 30px;
         }
+        a{
+            word-break: break-word;
+        }
     }
     .quick-links{
         h4{
@@ -487,6 +496,9 @@ img{
                 line-height: 53px;
             }
         }
+    }
+    .banner .row figure.text-center img{
+        width: 100%;
     }
     .navbar-toggler.collapsed .navbar-toggler-icon{
         background: url(../images/menu.svg) no-repeat;

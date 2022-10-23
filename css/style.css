@@ -106,26 +106,30 @@ img {
   background-position: 100% 100%;
 }
 .banner .row {
-  padding-top: 10rem;
+  padding-top: 6rem;
   align-items: center;
 }
-.banner .banner-text h1 {
+.banner .row .banner-text h1 {
   color: var(--white);
   font-weight: 700;
   font-size: 58px;
   line-height: 63px;
 }
-.banner .banner-text h1 span {
+.banner .row .banner-text h1 span {
   color: var(--orange);
+  word-break: break-word;
 }
-.banner .banner-text p {
+.banner .row .banner-text p {
   color: var(--white);
   margin: 1rem 0;
 }
-.banner .banner-text .butn {
+.banner .row .banner-text .butn {
   padding: 7px 15px;
   border: 2px solid;
   display: inline-block;
+}
+.banner .row figure.text-center img {
+  width: 430px;
 }
 
 .map-section {
@@ -424,6 +428,9 @@ img {
 .footer .contact-link .icons {
   width: 30px;
 }
+.footer .contact-link a {
+  word-break: break-word;
+}
 .footer .quick-links h4 {
   margin-bottom: 1rem;
 }
@@ -474,6 +481,9 @@ img {
   .banner .banner-text h1 {
     font-size: 48px;
     line-height: 53px;
+  }
+  .banner .row figure.text-center img {
+    width: 100%;
   }
   .navbar-toggler.collapsed .navbar-toggler-icon {
     background: url(../images/menu.svg) no-repeat;
