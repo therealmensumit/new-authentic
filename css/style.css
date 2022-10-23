@@ -35,13 +35,19 @@ a:hover {
   color: var(--orange);
 }
 
+ul, ol {
+  list-style: none;
+}
+
 img {
   width: 100%;
+  pointer-events: none;
 }
 
 .butn {
   position: relative;
   z-index: 1;
+  display: inline-block;
 }
 .butn:hover {
   color: var(--white);
@@ -200,6 +206,9 @@ img {
 .discover .read-more {
   color: var(--orange);
 }
+.discover .read-more:hover {
+  color: var(--white);
+}
 .discover .discover-list {
   border: 2px solid;
   border-radius: 42px;
@@ -289,6 +298,121 @@ img {
   color: var(--white);
 }
 
+.connect-with-us {
+  padding: 70px 0 50px;
+}
+.connect-with-us h2 {
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 52px;
+}
+.connect-with-us form .form-control {
+  border: 0;
+  border-bottom: 1px solid #37474F;
+  border-radius: 0;
+  resize: none;
+}
+.connect-with-us form .form-control:focus {
+  box-shadow: none;
+}
+.connect-with-us form .submit {
+  padding: 10px 80px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: 0;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.blog {
+  background-color: var(--gray);
+  padding: 26px 0;
+}
+.blog h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 52px;
+  color: var(--blue);
+}
+.blog .view-more {
+  padding: 10px 60px;
+  background-color: var(--blue);
+  font-size: 18px;
+}
+.blog .card {
+  border: 0;
+  background: 0;
+}
+.blog .card .card-img-top {
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.blog .card .card-body {
+  padding: 20px 0;
+}
+.blog .card .card-body .card-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  color: var(--blue);
+}
+.blog .card .card-body .card-text {
+  color: var(--blue);
+}
+.blog .card .read-more {
+  color: var(--orange);
+}
+.blog .card .read-more:hover {
+  color: var(--blue);
+}
+.blog .card:hover .card-img-top {
+  transform: scaleX(-1);
+}
+
+.connect {
+  padding-top: 50px;
+  padding-bottom: 36px;
+}
+.connect h2 {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 65px;
+  color: var(--blue);
+  position: relative;
+}
+.connect h2::after {
+  position: absolute;
+  content: "";
+  width: 136px;
+  height: 2px;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  background: var(--orange);
+}
+.connect h4 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 22px;
+}
+.connect .contact-number a {
+  font-family: var(--archivo);
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 38px;
+}
+.connect .contact-number a:hover {
+  color: var(--orange);
+}
+.connect .call {
+  padding: 10px 60px;
+  background-color: var(--blue);
+}
+
 .footer {
   padding: 50px 0;
   background-color: var(--blue);
@@ -297,8 +421,23 @@ img {
 .footer .footer-logo {
   width: 120px;
 }
-.footer span .icons {
+.footer .contact-link .icons {
   width: 30px;
+}
+.footer .quick-links h4 {
+  margin-bottom: 1rem;
+}
+.footer .quick-links ul {
+  padding: 0;
+}
+.footer .quick-links ul li {
+  line-height: 30px;
+}
+.footer .quick-links a img {
+  width: 45px;
+}
+.footer .quick-links a:hover img {
+  opacity: 0.6;
 }
 
 .copyright p {
@@ -309,19 +448,20 @@ img {
   button:focus:not(:focus-visible) {
     box-shadow: none;
   }
-  .navbar-collapse {
+  .header .navbar-collapse {
     background-color: var(--blue);
   }
-  .navbar-nav {
+  .header .navbar-nav {
     padding-bottom: 3rem;
+    height: 70vh;
   }
-  .nav-link {
+  .header .nav-link {
     margin-left: 0;
     text-align: center;
     min-width: 210px;
     margin: auto;
   }
-  .nav-link:last-child {
+  .header .nav-link:last-child {
     margin-left: 0;
     margin: auto;
   }
@@ -351,6 +491,10 @@ img {
   .discover-list {
     margin-bottom: 50px;
   }
+  .connect-with-us h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 @media (max-width: 767px) {
   .map-section .points::before {
@@ -359,5 +503,21 @@ img {
   .map-section .points::after {
     bottom: -10%;
     transform: translateX(50%);
+  }
+  .discover .discover-heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .why-choose h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .connect h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .connect .contact-number a {
+    font-size: 20px;
+    line-height: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
