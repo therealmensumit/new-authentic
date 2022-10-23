@@ -319,6 +319,7 @@ img {
 }
 .connect-with-us form .form-control:focus {
   box-shadow: none;
+  background: #ececec;
 }
 .connect-with-us form .submit {
   padding: 10px 80px;
